@@ -12,8 +12,16 @@
 	},
 	"license": "© 2026 Ricardo Samuel Mendoza Núñez. All rights reserved.",
 	"author": "Ricardo Samuel Mendoza Núñez",
-	"type": "module",
+	"type": "commonjs",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "mocha test/unit/**/*.spec.js",
+		"test-and-coverage": "nyc --all --reporter=text npm test"
+	},
+	"devDependencies": {
+		"chai": "^6.2.2",
+		"global-jsdom": "^29.0.0",
+		"jsdom": "^29.0.1",
+		"mocha": "^11.7.5",
+		"nyc": "^18.0.0"
 	}
 }
