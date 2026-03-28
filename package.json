@@ -1,0 +1,27 @@
+{
+	"name": "cinnamo-web-components",
+	"version": "1.0.0",
+	"description": "Web components for optimizing web development",
+	"homepage": "https://github.com/rsmngdlmx/cinnamo-web-components#readme",
+	"bugs": {
+		"url": "https://github.com/rsmngdlmx/cinnamo-web-components/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rsmngdlmx/cinnamo-web-components.git"
+	},
+	"license": "© 2026 Ricardo Samuel Mendoza Núñez. All rights reserved.",
+	"author": "Ricardo Samuel Mendoza Núñez",
+	"type": "commonjs",
+	"scripts": {
+		"test": "mocha test/unit/**/*.spec.js",
+		"test-and-coverage": "nyc --all --reporter=text npm test"
+	},
+	"devDependencies": {
+		"chai": "^6.2.2",
+		"global-jsdom": "^29.0.0",
+		"jsdom": "^29.0.1",
+		"mocha": "^11.7.5",
+		"nyc": "^18.0.0"
+	}
+}
